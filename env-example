@@ -1,0 +1,6 @@
+PORT=3005
+MONGO_URI='uri de mongo'
+JWT_SERCRET='secret para firmar los token'
+JWT_SECRET_REFRESH='secret para firmar los token de cambio de clave'
+SMTP_USER='ejemplo@ejemplo.com'
+SMTP_PASSWORD='clave del correo'
