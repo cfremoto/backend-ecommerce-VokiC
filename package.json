@@ -1,0 +1,29 @@
+{
+  "name": "app_ecommerce",
+  "version": "0.1.0",
+  "description": "backend de un ecommerce con node, express y mongo",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon ./src/config/server.js",
+    "start": "node ./src/config/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ing. Cesar Fernandez",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-multiparty": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-validator": "^6.14.2",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.4",
+    "mongoose": "^6.5.2",
+    "nodemailer": "^6.7.8",
+    "swagger-ui-express": "^4.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
