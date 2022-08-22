@@ -14,8 +14,16 @@ module.exports = {
 
   obtenerCuponCodigo: async (parametro) => {
     try {
-      const cupon = await modelCupon({ codigo: new RegExp(parametro, 'i') })
-      return cupon
+      return await modelCupon.find({ codigo: new RegExp(parametro, 'i') }).sort({ createdAt: -1})
+    } catch (err) {
+      return err
+    }
+
+  },
+
+  eliminarCupon: async (parametro) => {
+    try {
+      return await modelCupon.findByIdAndDelete(parametro)
     } catch (err) {
       return err
     }

@@ -3,7 +3,6 @@ const path = require('path')
 const response = require('../../network/response.js')
 const productoDto = require('./producto.dto.js')
 const inventarioDto = require('../inventario/inventario.dto.js')
-const { info } = require('console')
 
 
 module.exports = {
